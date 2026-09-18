@@ -2,133 +2,38 @@
 
 > **Clear a day, not a decade.**
 
-An independent UX/product concept exploring how WhatsApp could let users clear messages from a **specific day or date range** instead of removing the entire chat history.
+An independent UX/product concept exploring how WhatsApp could let users clear messages from a **specific day or date range** instead of clearing an entire chat.
 
-🔗 **[Try the interactive prototype](https://saisatwikak.github.io/Whatsapp_feature_idea/)**
+🔗 **[Live Prototype](https://saisatwikak.github.io/Whatsapp_feature_idea/)**
 
----
+## 💡 Problem
 
-## 💡 The Problem
+WhatsApp's chat-clearing experience can feel all-or-nothing.
 
-Clearing a WhatsApp chat can feel like an all-or-nothing decision.
+What if users could clear a specific day or date range while keeping the rest of their chat history?
 
-Sometimes a user may want to remove messages from a particular period while keeping the rest of the conversation intact.
+## 🎯 Solution
 
-For example:
+**Clear by Date** adds a date-based option to the existing Clear Chat flow.
 
-> "I want to remove the messages from one particular week, but keep everything else."
+Users can select a day or date range, review what will be cleared, confirm the action, and temporarily undo it.
 
-The existing experience does not provide this level of date-based control.
+## 🔄 Flow
 
-This concept explores a middle ground between:
+**Chat → ⋮ → More → Clear Chat → Select Date/Range → Review → Confirm → Undo**
 
-- Keeping the entire chat history
-- Clearing the entire chat history
+## 🛠️ Built With
 
-### Design question
+**HTML • CSS • JavaScript**
 
-**What if users could clear a specific day or date range while keeping the rest of their chat history?**
+## 📚 Documentation
 
----
+- [Problem](docs/problem.md)
+- [UX Flow](docs/ux-flow.md)
+- [Design Decisions](docs/design-decisions.md)
+- [Implementation](docs/implementation.md)
+- [Future Improvements](docs/future-improvements.md)
 
-## 🎯 The Concept
+## ⚠️ Disclaimer
 
-**Clear by Date** introduces a new option within the existing Clear Chat flow.
-
-Instead of only choosing to clear everything, the user can:
-
-1. Choose **a day or a range of days**
-2. Review exactly what will be removed
-3. See an estimated message and storage count
-4. Confirm the action
-5. Temporarily undo the action
-
-The goal is to give users **more control without creating an entirely new interaction pattern.**
-
----
-
-## 🔄 User Flow
-
-```text
-Chat
-  ↓
-⋮ Overflow Menu
-  ↓
-More
-  ↓
-Clear Chat
-  ↓
-Choose what to remove
-  ↓
-A day or a range of days
-  ↓
-Select dates
-  ↓
-Review selection
-  ↓
-Confirm
-  ↓
-Messages cleared
-  ↓
-Undo
-
----
-
-## 🎯 The Concept
-
-**Clear by Date** introduces a new option within the existing Clear Chat flow.
-
-Instead of only choosing to clear everything, the user can:
-
-1. Choose **a day or a range of days**
-2. Review exactly what will be removed
-3. See an estimated message and storage count
-4. Confirm the action
-5. Temporarily undo the action
-
-The goal is to give users **more control without creating an entirely new interaction pattern.**
-
----
-
-## ✨ Key UX Decisions
-
-### 1. Date-based clearing
-
-Users can select:
-
-- A single day
-- A custom date range
-- Quick selections such as **Yesterday** or **Last 7 Days**
-
-A calendar provides a visual way to understand the selected period.
-
-### 2. Explicit confirmation
-
-Before clearing messages, the prototype shows:
-
-- Selected date range
-- Number of messages
-- Photos
-- Videos
-- Documents
-- Estimated storage freed
-
-This makes the consequence of the action more visible before confirmation.
-
-### 3. Local-only deletion
-
-The concept is designed around **"delete for me"** behavior.
-
-The selected messages are removed from the user's device while the other participant keeps their own copy.
-
-### 4. Undo
-
-A short-lived Undo action is provided immediately after clearing.
-
-The concept specification uses a **30-second Undo window**. The current prototype demonstrates the interaction with a shorter demo timeout.
-
-### 5. History marker
-
-After clearing, the chat includes a system message indicating that messages from a particular period were cleared.
-
-This helps explain gaps in the conversation instead of making the missing history look like a loading or synchronization problem.
+This is an **independent UX/product concept** and is not an official WhatsApp feature.
