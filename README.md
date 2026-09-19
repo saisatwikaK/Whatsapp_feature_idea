@@ -22,9 +22,6 @@ Users can select a day or date range, review what will be cleared, confirm the a
 
 **Chat → ⋮ → More → Clear Chat → Select Date/Range → Review → Confirm → Undo**
 
-## 🛠️ Built With
-
-**HTML • CSS • JavaScript**
 
 ## 📚 Documentation
 
